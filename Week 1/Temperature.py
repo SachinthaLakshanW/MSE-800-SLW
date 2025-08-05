@@ -23,6 +23,3 @@ for i in Fahrenheit_temp:
 
 indices = np.where(temp>20)[0]
 print("Indices of days where the temperature exceeded 20°C :", indices)
-
-      
-
