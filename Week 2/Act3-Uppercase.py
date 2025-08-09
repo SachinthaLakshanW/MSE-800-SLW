@@ -8,6 +8,9 @@ class StringManipulator:
     
     def find_length(self):
         return len(self.text)   
+    
+    def find_uppercase(self):
+        return len(self.text)   
     #create an instance of the StringManipulator class
     
 name = StringManipulator("Example")
@@ -16,6 +19,9 @@ name = StringManipulator("Example")
     #Call the find_character method on the object
 result = name.find_character('x')
 result = name.find_length()
+result = name.find_uppercase()
+
+
 print(result)
 
         
