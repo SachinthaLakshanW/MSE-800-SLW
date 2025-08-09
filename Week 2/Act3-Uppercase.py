@@ -3,7 +3,6 @@ class StringManipulator:
         self.text = text
 
     def find_character(self, char):
-    
         return self.text.find(char)
     
     def find_length(self):
