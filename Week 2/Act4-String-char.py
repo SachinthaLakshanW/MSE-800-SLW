@@ -19,3 +19,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#The __init__ method stores the string in the object when it's created, so we don’t need to pass it to each method. This makes the code shorter and easier to use.
