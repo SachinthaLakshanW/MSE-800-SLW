@@ -16,10 +16,11 @@ def main():
     print("Original content:")
     print(Df.read_file())
 
-    Df.write_file("\nNew line added.")
+    Df.write_file("\nNew  line added.")
 
     print("\nUpdated content:")
     print(Df.read_file())
 
 if __name__ == "__main__":
     main()
+
