@@ -1,6 +1,6 @@
 import pandas as pd
 
-class BigDataProcessor:
+class CusProcessing:
     def __init__(self, input_file, parquet_file="output.parquet"):
         self.input_file = input_file
         self.parquet_file = parquet_file
@@ -26,7 +26,7 @@ class BigDataProcessor:
         print(stats_df)
 
 def main():
-    processor = BigDataProcessor("Wholesale_customers_data.csv")
+    processor = CusProcessing("Wholesale_customers_data.csv")
     processor.read_csv()
     processor.save_parquet()
     processor.compute_stats_table()
