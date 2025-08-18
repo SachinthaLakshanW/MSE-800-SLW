@@ -1,0 +1,25 @@
+1. Project Scope
+
+The purpose of the YB College database is to manage and organize all academic and administrative data efficiently. 
+This database will help track students, lecturers, courses, class schedules, and results. 
+It will provide a centralized system for storing information, reduce manual work, and allow staff to retrieve information quickly. 
+The database also supports reporting and analytics, such as attendance, student performance, and course enrollment trends.
+
+Scope includes:
+Managing student information.
+Recording courses and class schedules.
+Managing all the info thoughout the semester
+
+2.Entities and EER diagram     
+
+| Entity   | Role                                          | Attributes                                            |
+| -------- | --------------------------------------------- | ----------------------------------------------------- |
+| Student  | Represents students enrolled in the college   | Student ID, Name, Date of Birth, Gender, Email, Phone |
+| Lecturer | Represents teaching staff                     | Lecturer ID, Name, Department, Email, Phone           |
+| Course   | Represents academic courses offered           | Course ID, Name, Credit, Semester                     |
+| Class    | Represents specific classes of courses taught | Class ID, Course, Lecturer, Schedule, Room            |
+
+
+3. Table design
+Attached
+
