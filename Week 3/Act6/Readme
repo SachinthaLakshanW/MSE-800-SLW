@@ -1,0 +1,21 @@
+# YB College Database (Yoobee Colleges)
+
+## Description
+This project is a command-line database system for YB College. It manages Students, Lecturers, Courses, and Classes.  
+The system is built using **Python (sqlite3)** and follows an **EER-to-Relational Schema** mapping.
+
+## Features
+- Add, view, and delete students
+- Add and view courses
+- Easily extendable for lecturers and classes
+- Uses SQLite3 (lightweight, file-based DB)
+
+## Files
+- database.py → Handles database creation
+- manager.py → CRUD operations
+- main.py → Command-line interface
+- README.txt → Project documentation
+
+## How to Run
+```bash
+python main.py
