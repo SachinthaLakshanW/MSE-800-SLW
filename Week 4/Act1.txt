@@ -1,0 +1,27 @@
+Project Scope
+
+The purpose of the YB College database is to manage and organize all academic and administrative data efficiently. 
+This database will help track students, lecturers, courses, class schedules, and results. 
+It will provide a centralized system for storing information, reduce manual work, and allow staff to retrieve information quickly. 
+The database also supports reporting and analytics, such as attendance, student performance, and course enrollment trends.
+
+No Of Actors: 3 (Admin , Student , Lectures)
+
+Use Cases : 
+
+---Admin---
+Manage Student Records
+Manage Lecturer Records
+Add Course
+Manage Courses
+Schedule Class
+
+---Student---
+View Courses
+Enroll in Class
+View Schedule
+
+---Lecturer---
+Add Course
+Assign Class
+Manage Class Schedule
