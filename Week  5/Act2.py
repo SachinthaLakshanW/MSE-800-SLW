@@ -48,3 +48,7 @@ def main():
 if __name__ == "__main__":
     main()
     
+
+#The main class Person has common things like name, address, age, and ID.
+#Then, other classes (Student, Academic, and Staff) are made from Person. Each one adds its own extra details.
+#This way, we don’t have to write the same code again and again. It makes the program shorter and easier to manage.
