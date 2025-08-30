@@ -13,7 +13,7 @@ class Dog(Animal):
         self.breed = breed
 
     def show_info(self):
-        # # method using Public and Protected attribute.
+        # method using Public and Protected attribute.
         print(f"Our Other Pet is a Dog. Her name is {self.name}. She is {self.breed} and lovely {self._type} to have around.")
 
 def main():
