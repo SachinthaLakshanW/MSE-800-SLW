@@ -1,0 +1,22 @@
+1. Class Diagram
+Shows the main things in the library system: books, members, borrow records, librarians, and the system itself.
+Each thing has only the important information (like book title, member name, borrow date).
+Shows how things are connected: members borrow books, borrow records keep track of borrowed books.
+Why it works: It helps organize the system so we know what information is needed for borrowing, returning, and fines.
+
+2. Use Case Diagram
+Shows who can do what in the library system.
+Member can search, borrow, return books, and pay fines.
+Librarian can add/remove books and help with returns.
+Why it works: It shows all the main actions in the library and who does them, making it clear how the system is used.
+
+3. Sequence Diagram (Borrow Book)
+Shows step by step what happens when a member borrows a book.
+Member asks to borrow → system checks availability → creates a record → member gets confirmation.
+Why it works: It makes the borrowing process easy to follow and shows how the system and member interact.
+
+4. Activity Diagram (Return Book)
+Shows what happens when a member returns a book.
+Steps: member returns → system finds record → checks if late → calculates fine → updates book availability → gives confirmation.
+Includes member paying fine if needed.
+Why it works: It clearly shows the return process and what the system does for each step.
