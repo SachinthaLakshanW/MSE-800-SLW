@@ -1,5 +1,6 @@
 from users import Customer, Admin
 from database import db
+from tabulate import tabulate 
 
 def register():
     username = input("Enter username: ")
@@ -70,9 +71,10 @@ def admin_menu(user):
             if not pending:
                 print("No pending bookings.")
                 continue
+            headers = ["Booking ID", "User ID", "Car ID", "Start Date", "End Date", "Total Cost", "Status"]
+            print(tabulate(pending, headers=headers, floatfmt=".2f"))
             for b in pending:
-                print(f"Booking ID:{b[0]}, User ID:{b[1]}, Car ID:{b[2]}, Total Cost:${b[5]:.2f}, Status:{b[6]}")
-                action = input("Approve(A) / Reject(R) / Skip(S): ").upper()
+                action = input(f"Booking ID {b[0]} - Approve(A) / Reject(R) / Skip(S): ").upper()
                 if action == "A":
                     from booking import Booking as B
                     booking = B(*b)

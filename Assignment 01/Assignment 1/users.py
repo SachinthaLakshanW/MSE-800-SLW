@@ -1,5 +1,6 @@
 from database import db
 from booking import Booking
+from tabulate import tabulate  # Add this import at the top
 
 class User:
     def __init__(self, username, role):
@@ -13,8 +14,12 @@ class Customer(User):
             print("No cars available at the moment.")
             return
         print("\n=== Available Cars ===")
-        for car in cars:
-            print(f"ID:{car[0]} | {car[1]} {car[2]} | Year:{car[3]} | Mileage:{car[4]} | Price/day:${car[8]:.2f} | Available:{'Yes' if car[5] else 'No'}")
+        headers = ["ID", "Make", "Model", "Year", "Mileage", "Available", "Price/day"]
+        table = [
+            [car[0], car[1], car[2], car[3], car[4], "Yes" if car[5] else "No", f"${car[8]:.2f}"]
+            for car in cars
+        ]
+        print(tabulate(table, headers=headers, floatfmt=".2f"))
 
     def book_car(self, car_id, start_date, end_date):
         car_list = [c for c in db.get_all_cars() if c[0] == car_id]
