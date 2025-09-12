@@ -1,6 +1,6 @@
 from database import db
 from booking import Booking
-from tabulate import tabulate  # Add this import at the top
+from tabulate import tabulate 
 
 class User:
     def __init__(self, username, role):
