@@ -1,0 +1,19 @@
+.register-page {
+  max-width: 400px;
+  margin: 180px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+}   
+
+
+.register-page input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+.register-page button {
+  padding: 8px 16px;
+  margin-top: 10px;
+}
