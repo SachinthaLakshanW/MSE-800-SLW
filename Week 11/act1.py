@@ -12,8 +12,8 @@ class TestMathOperations(unittest.TestCase):
         self.assertEqual(add(-1, 1), 0)
 
     def test_multiply(self):
-        self.assertEqual(multiply(2, 3), 6)
-        self.assertEqual(multiply(-2, 4), -8)
+        self.assertEqual(multiply(5, 3), 15)
+        self.assertEqual(multiply(-7, 2), -14)
 
 if __name__ == '__main__':
     unittest.main()
