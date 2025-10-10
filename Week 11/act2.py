@@ -1,24 +1,18 @@
-import sqlite3, unittest
+import unittest
 
 class ExpenseTracker:
-    def __init__(self, db="expenses.db"):
-        self.conn = sqlite3.connect(db)
-        self.conn.execute("CREATE TABLE IF NOT EXISTS expenses (id INTEGER PRIMARY KEY, description TEXT, amount REAL)")
-        self.conn.commit()
+    def __init__(self):
+        self.expenses = []
 
     def add_expense(self, desc, amount):
-        self.conn.execute("INSERT INTO expenses (description, amount) VALUES (?, ?)", (desc, amount))
-        self.conn.commit()
+        self.expenses.append((desc, amount))
 
     def total_expense(self):
-        cur = self.conn.cursor()
-        cur.execute("SELECT SUM(amount) FROM expenses")
-        result = cur.fetchone()[0]
-        return result or 0
+        return sum(amount for desc, amount in self.expenses)
 
 class TestExpenseTracker(unittest.TestCase):
     def setUp(self):
-        self.t = ExpenseTracker(":memory:")
+        self.t = ExpenseTracker()
 
     def test_add_and_total(self):
         self.t.add_expense("Lunch", 10)
